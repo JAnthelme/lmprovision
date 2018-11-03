@@ -1,0 +1,52 @@
+---
+  - name: install misc. librairies
+    apt:
+      name: "{{ packages }}"
+      state: latest
+    vars:
+      packages:
+#        - dpatch
+#        - libncurses5-dev:amd64
+#        - build-essential
+#        - libssl-dev
+#        - libcurl4-gnutls-dev  #or libcurl?
+#        - libexpat1-dev
+#        - gettext
+#        - unzip
+#        - libexif-dev
+#        - libjpeg-dev:amd64
+#        - libtiff-dev
+#        - libpng-dev
+#        - libusb-dev
+#        - libxml2-dev
+#        - libxft-dev
+#        - libftdi-dev
+#        - libc6-dev:amd64
+#        - libgmp-dev:amd64
+#        - libx11-dev:amd64
+#        - libxft-dev
+#        - libxft2-dev
+#        - libxext-dev:amd64
+#        - libxcb-randr0-dev 
+#        - libxcb-xtest0-dev 
+#        - libxcb-xinerama0-dev 
+#        - libxcb-shape0-dev 
+#        - libxcb-xkb-dev
+#        - libffi-dev
+#        - libfreetype6-dev
+#        - autoconf
+#        - automake
+#        - cmake
+#        - libtool
+#        - libyaml-dev
+#        - doxygen
+#        - bzr
+#        - debhelper
+#        - devscripts
+#         - apt-transport-https
+         ## https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-18-04-quickstart
+#         - python3-dev
+#         - python3-pip
+#         - python3-venv
+
+### CHECK        - libcurl-dev

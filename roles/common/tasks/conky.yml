@@ -1,0 +1,5 @@
+---
+  - name: install conky system monitor
+    apt:
+      name: conky-all
+      state: latest

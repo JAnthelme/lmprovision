@@ -1,0 +1,9 @@
+---
+  - name: install HP librairies
+    apt:
+      name: "{{ packages }}"
+      state: latest
+    vars:
+      packages:
+        - hplip
+        - hplip-gui

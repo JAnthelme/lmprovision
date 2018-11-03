@@ -1,0 +1,5 @@
+---
+  - name: install cheese (webcam)
+    apt:
+      name: cheese
+      state: latest

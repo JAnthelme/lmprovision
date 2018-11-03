@@ -1,0 +1,14 @@
+---
+  - name: install ranger
+    apt:
+      name: "{{ packages }}"
+      state: latest
+    vars:
+      packages:
+        - ranger
+        - caca-utils
+        - highlight
+        - atool
+        - w3m
+        - poppler-utils
+        - mediainfo

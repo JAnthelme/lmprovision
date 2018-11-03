@@ -1,0 +1,9 @@
+---
+  - name: install rxvt terminal
+    apt:
+      name: virtualbox
+      state: latest
+      name: virtualbox-ext-pack
+      state: latest
+      #name: virtualbox-qt
+      #state: latest

@@ -1,0 +1,5 @@
+---
+  - name: install puttty
+    apt:
+      name: putty
+      state: latest

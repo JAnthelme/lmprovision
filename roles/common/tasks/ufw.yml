@@ -1,0 +1,21 @@
+---
+  - name: install ufw
+    apt:
+      name: ufw
+      state: latest
+      
+  - name: reset ufw
+    ufw:
+      state:reset
+    ufw:
+      policy: deny
+      direction: incoming
+      state: enabled
+      
+  - name: copy the hosts file
+    copy:
+      src:  '{{ tmplfilesdir }}hosts'
+      dest: /etc/hosts
+      owner: root
+      mode: u=r,g=r,o=rw
+      backup: yes

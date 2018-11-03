@@ -1,0 +1,5 @@
+---
+  - name: install gparted
+    apt:
+      name: gparted
+      state: latest

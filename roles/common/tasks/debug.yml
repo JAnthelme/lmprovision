@@ -1,0 +1,11 @@
+---
+  - debug:
+      msg:
+        - "Hello Monde"
+        - "playbook dir is {{ playbook_dir }}"
+        - "ansible_user is {{ ansible_user }}"  
+        - "ansible_ssh_user is: {{ ansible_ssh_user }}"
+        - "myusername is: {{ myusername }}"
+        - "home directory is: {{ ansible_env.HOME }}"
+        - "tmplfilesdir is: {{ tmplfilesdir }}"
+        - "defterminal is: {{ defterminal }}"

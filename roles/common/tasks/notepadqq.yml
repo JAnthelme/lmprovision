@@ -1,0 +1,5 @@
+---
+  - name: install notepadqq-gtk
+    apt:
+      name: notepadqq-gtk
+      state: latest

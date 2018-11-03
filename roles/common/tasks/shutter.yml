@@ -1,0 +1,5 @@
+---
+  - name: install shutter
+    apt:
+      name: shutter
+      state: latest

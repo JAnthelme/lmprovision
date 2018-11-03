@@ -1,0 +1,34 @@
+---
+  - apt_repository:
+      repo: deb http://archive.ubuntu.com/ubuntu xenial universe
+      state: present
+      
+  - name: update apt cache
+    apt: update_cache=yes
+
+  - name: install man
+    apt:
+      name: man
+      state: latest
+
+  - name: install software-properties-common (for add-apt-repository cmd)
+    apt:
+      name: software-properties-common
+      state: latest
+
+  - name: install python-software-properties (for add-apt-repository cmd)
+    apt:
+      name: python-software-properties
+      state: latest
+  
+  - name: add user '{{ myusername }}'
+    user:
+      name: '{{ myusername }}'
+      password: '{{ mypwd }}'
+      shell: /bin/bash
+      groups: 
+        - sudo
+      append: yes
+      system: no
+      createhome: yes
+      #home: /home/foo

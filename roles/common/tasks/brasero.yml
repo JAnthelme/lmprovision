@@ -1,0 +1,5 @@
+---
+  - name: install brasero
+    apt:
+      name: brasero
+      state: latest

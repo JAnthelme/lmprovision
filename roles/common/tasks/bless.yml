@@ -1,0 +1,5 @@
+---
+  - name: install bless hex editor
+    apt:
+      name: bless
+      state: latest

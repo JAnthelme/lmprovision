@@ -1,0 +1,39 @@
+# ANSIBLE BUG - DOESNT CURRENTLY WORK
+---
+  - apt_repository:
+      repo: '{{ ppas }}'
+      state: present
+    vars:
+      ppas:
+#        - ppa:nginx/stable      
+#        - ppa:fontforge/fontforge
+#        - libncurses5-dev:amd64
+#        - build-essential
+#        - libssl-dev
+#        - libcurl4-gnutls-dev  #or libcurl?
+#        - libexpat1-dev
+#        - gettext
+#        - unzip
+#        - libexif-dev
+#        - libjpeg-dev:amd64
+#        - libtiff-dev
+#        - libpng-dev
+#        - libusb-dev
+#        - libxml2-dev
+#        - libxft-dev
+#        - libftdi-dev
+#        - libc6-dev:amd64
+#        - libgmp-dev:amd64
+#        - libx11-dev:amd64
+#        - libxft-dev
+#        - libxft2-dev
+#        - libxext-dev:amd64
+#        - libxcb-randr0-dev 
+#        - libxcb-xtest0-dev 
+#        - libxcb-xinerama0-dev 
+#        - libxcb-shape0-dev 
+#        - libxcb-xkb-dev
+#        - libffi-dev
+
+        
+### CHECK        - libcurl-dev

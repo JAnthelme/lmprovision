@@ -1,0 +1,34 @@
+---
+  - name: creates script to load ppa repos (Ansible bug in native apt_repository)
+    copy:
+      dest: /home/{{ myusername }}/.loadppas.sh
+      owner: '{{ myusername }}'
+      mode: u=rwx
+      backup: yes
+      content: |
+        #!/bin/bash
+        
+        sudo add-apt-repository universe -y
+        
+        sudo add-apt-repository ppa:fontforge/fontforge -y
+        sudo apt-add-repository ppa:stefansundin/truecrypt -y
+        sudo apt-add-repository ppa:shutter/ppa -y
+        sudo apt-add-repository ppa:notepadqq-team/notepadqq -y
+        
+  - name: run repos-installing script
+    shell: /home/{{ myusername }}/.loadppas.sh
+    
+  - name: update apt cache
+    apt: update_cache=yes
+
+# script to list all current ppas 
+# from https://askubuntu.com/questions/148932/how-can-i-get-a-list-of-all-repositories-and-ppas-from-the-command-line-into-an
+# #! /bin/bash
+# # listppa Script to get all the PPA installed on a system ready to share for reininstall
+# for APT in `find /etc/apt/ -name \*.list`; do
+#     grep -o "^deb http://ppa.launchpad.net/[a-z0-9\-]\+/[a-z0-9\-]\+" $APT | while read ENTRY ; do
+#             USER=`echo $ENTRY | cut -d/ -f4`
+#             PPA=`echo $ENTRY | cut -d/ -f5`
+#             echo sudo apt-add-repository ppa:$USER/$PPA
+#         done
+# done

@@ -1,0 +1,20 @@
+---
+# https://www.google.com/linuxrepositories/
+#https://michaelheap.com/ansible-installing-google-chrome/
+  - name: set Google Chrome apt file location
+    set_fact:
+      gc_apt_file: /etc/apt/sources.list.d/google-chrome.list
+  
+  - name: add Google Chrome key
+    shell: wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+
+  - name: add Google Chrome repo
+    copy: content="deb http://dl.google.com/linux/chrome/deb/ stable main" dest={{gc_apt_file}} owner=root group=root mode=644
+
+  - name: update apt cache
+    apt: update_cache=yes
+    
+  - name: install Google Chrome
+    apt:
+      name: google-chrome-stable 
+      state: latest

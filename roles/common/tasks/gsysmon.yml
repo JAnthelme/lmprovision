@@ -1,0 +1,5 @@
+---
+  - name: install gnome-system-monitor
+    apt:
+      name: gnome-system-monitor
+      state: latest

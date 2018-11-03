@@ -1,0 +1,37 @@
+---
+  - name: install Vim
+    apt:
+      name: vim
+      state: latest
+  - name: install Vim - add .viimrc
+    copy:
+      dest: /home/{{ myusername }}/.vimrc
+      owner: '{{ myusername }}'
+      # group: foo
+      mode: u=rwx #,g=r,o=r
+      backup: yes
+      content: |
+        set shell=bash
+        let mapleader=","
+        set viminfo='100,\"2500,:200,%,n~/.viminfo        
+        
+        set nu
+        set hlsearch
+        set mouse=a
+
+        "## cycle through buffers with ctrl-up and ctrl-down 
+        nnoremap <C-Up> :bn<CR>
+        nnoremap <C-Down> :bp<CR>
+        "make all windows equal in size
+        nnoremap <C-?> <C-w>=
+
+        "cycle through windows with ctrl-up and ctrl-down 
+        "nnoremap <C-+> <C-w>w
+        
+        "## tab settings
+        "to check filetypes: :set filetype? :%retab replace all tabs with spaces
+        :filetype on
+        autocmd Filetype c setlocal tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+        autocmd Filetype html setlocal tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+        autocmd Filetype javascript setlocal tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+        autocmd Filetype yaml setlocal tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab

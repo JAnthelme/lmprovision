@@ -1,0 +1,20 @@
+---
+  - name: create /home/{{ myusername }}/Documents/Code/Haskell/
+    file: 
+      path: /home/{{ myusername }}/Documents/Code/Haskell/
+      state: directory
+      recurse: yes
+      owner: '{{ myusername }}'
+      # group: foo
+      mode: u=rwx #,g=r,o=r
+  - name: wget Haskell Stack
+    get_url: 
+      url: https://get.haskellstack.org/
+      dest: /home/{{ myusername }}/Documents/Code/Haskell/installHStack.sh
+      owner: '{{ myusername }}'
+      # group: foo
+      mode: u=rwx #,g=r,o=r
+  - name: install Stack
+    shell: /home/{{ myusername }}/Documents/Code/Haskell/installHStack.sh
+  - name: launching GHCI
+    shell: stack ghci

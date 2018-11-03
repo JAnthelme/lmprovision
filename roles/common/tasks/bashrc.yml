@@ -1,0 +1,23 @@
+---
+  - name: bashrc
+    copy:
+      # src: /home/user8/vbvm/tests/ansible_tmplfiles/.bashrc
+      dest: /home/{{ myusername }}/.bashrc
+      owner: '{{ myusername }}'
+      # group: foo
+      mode: u=rwx #,g=r,o=r
+      backup: yes
+      content: |
+        export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin
+        export CDPATH=$HOME/Documents/
+        
+        # misc commands
+        ## check window size
+        shopt -s checkwinsize
+        
+        # some aliases
+        alias ll='ls -alF'
+        
+        export EDITOR="vim"
+        export TERMINAL={{ defterminal }}
+        export BROWSER="firefox"

@@ -1,0 +1,5 @@
+---
+  - name: install truecrypt
+    apt:
+      name: truecrypt
+      state: latest

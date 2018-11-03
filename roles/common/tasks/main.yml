@@ -1,0 +1,56 @@
+---
+- include: debug.yml
+- include: basics.yml
+- include: repos.yml
+#- include: bashrc.yml
+- include: libmisc.yml
+#- include: git.yml
+#- include: rxvt.yml
+#- include: vim.yml
+#- include: bless.yml
+#- include: ranger.yml
+#- include: gsysmon.yml
+
+#- include: gparted.yml
+#- include: putty.yml
+#- include: virtualbox.yml
+#- include: vagrant.yml
+#- include: ansible.yml
+
+#- include: hplip.yml
+
+#- include: cheese.yml
+#- include: conky.yml
+
+
+## various app
+#- include: googlechrome.yml
+#- include: haskellstack.yml
+#- include: shutter.yml
+#- include: truecrypt.yml
+#- include: bleachbit.yml
+#- include: brasero.yml
+#- include: sublimetext3.yml
+#- include: notepadqq.yml
+
+## this must be the final one (as the incoming connections will be closed)
+#- include: ufw.yml
+
+#- include: zzzTBD.yml
+
+## end of Ansible script
+
+##todo before final
+## - comment out the libmisc.yml file
+
+##missing
+## -clipgrab https://clipgrab.org/
+## - c stuff https://github.com/kozross/awesome-c
+## dpkg-query -l 'lib*-dev'
+## skype?
+## intelFPGA / quartus
+## analogdiscovery2
+## ffmpeg,grub2, boot, bootrepair, thunderbird
+## firefox
+## tc
+## document viewer?
