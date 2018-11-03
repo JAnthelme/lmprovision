@@ -1,5 +1,5 @@
 - name: provisioning of local machine...
-  hosts: all
+  hosts: localhost
   sudo: true
   vars:
     myusername: user0
