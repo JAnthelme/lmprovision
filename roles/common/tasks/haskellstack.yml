@@ -15,6 +15,6 @@
       # group: foo
       mode: u=rwx #,g=r,o=r
   - name: install Stack
-    shell: /home/{{ myusername }}/Documents/Code/Haskell/installHStack.sh
+    shell: /home/{{ myusername }}/Documents/Code/Haskell/installHStack.sh -f
   #- name: launching GHCI
   #  shell: stack ghci
