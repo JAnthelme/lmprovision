@@ -1,0 +1,5 @@
+---
+  - name: install bleachbit
+    apt:
+      name: bleachbit
+      state: latest
