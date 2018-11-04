@@ -1,11 +1,11 @@
 # Local Machine Provisionning
-> With Ansible
+> With Ansible (Ubuntu-based distros)
 
 ## Installation
 
 Install [Ansible](https://docs.ansible.com/ansible/2.3/intro_installation.html) and git.
 
-From the shell prompt (Ubuntu-based distros):
+From the shell prompt:
 ```sh
 sudo apt-get update
 sudo apt-get install software-properties-common
