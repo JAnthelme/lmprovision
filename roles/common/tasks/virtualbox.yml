@@ -3,7 +3,11 @@
     apt:
       name: virtualbox
       state: latest
+  - name: install virtualbox extension pack
+    apt:
       name: virtualbox-ext-pack
       state: latest
+  - name: install virtualbox for Qt
+    apt:
       name: virtualbox-qt
       state: latest
