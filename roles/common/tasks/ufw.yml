@@ -6,7 +6,7 @@
       
   - name: reset ufw
     ufw:
-      state:reset
+      state: reset
 
   - name: set ufw policy 
     ufw:
