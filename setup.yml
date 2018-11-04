@@ -4,7 +4,7 @@
   become: yes
   become_method: sudo
   vars:
-    myusername: user0
+    myusername: user8
     # shell cmd: mkpasswd --method=sha-512
     mypwd: $6$7XW673ol.ZNKlZS$4oAG4xj0N6GFw9XeDOrYMPcFE5S.nR08FtB1umDlrmcL3VIiBgc6O9L87TL./iBV3HMJ1exuV75iyA40GS7x01 #xxx
     
