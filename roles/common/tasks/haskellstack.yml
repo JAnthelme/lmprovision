@@ -16,5 +16,5 @@
       mode: u=rwx #,g=r,o=r
   - name: install Stack
     shell: /home/{{ myusername }}/Documents/Code/Haskell/installHStack.sh
-  - name: launching GHCI
-    shell: stack ghci
+  #- name: launching GHCI
+  #  shell: stack ghci
