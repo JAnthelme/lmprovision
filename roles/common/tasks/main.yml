@@ -4,7 +4,7 @@
 - include: repos.yml
 - include: bashrc.yml
 - include: libmisc.yml
-- include: git.yml
+#- include: git.yml
 - include: rxvt.yml
 - include: vim.yml
 - include: bless.yml
