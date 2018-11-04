@@ -13,7 +13,7 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible git
 ```
-Then
+Rename user0 (in `setup.yml`) to your user name, then run:
 ```sh
 sudo ansible-pull setup.yml -U https://github.com/janthelme/lmprovision.git
 ```
