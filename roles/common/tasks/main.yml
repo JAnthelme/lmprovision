@@ -34,7 +34,7 @@
 - include: notepadqq.yml
 
 ## this must be the final one (as the incoming connections will be closed)
-#- include: ufw.yml
+- include: ufw.yml
 
 #- include: zzzTBD.yml
 
