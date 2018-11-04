@@ -4,7 +4,7 @@
 - include: repos.yml
 - include: bashrc.yml
 - include: libmisc.yml
-#- include: git.yml
+#- include: git.yml     # excluded since git must already be present to run ansible-pull
 - include: rxvt.yml
 - include: vim.yml
 - include: bless.yml
@@ -24,14 +24,14 @@
 
 
 ## various app
-#- include: googlechrome.yml
-#- include: haskellstack.yml
-#- include: shutter.yml
+- include: googlechrome.yml
+- include: haskellstack.yml
+- include: shutter.yml
 - include: truecrypt.yml
-#- include: bleachbit.yml
-#- include: brasero.yml
-#- include: sublimetext3.yml
-#- include: notepadqq.yml
+- include: bleachbit.yml
+- include: brasero.yml
+- include: sublimetext3.yml
+- include: notepadqq.yml
 
 ## this must be the final one (as the incoming connections will be closed)
 #- include: ufw.yml
