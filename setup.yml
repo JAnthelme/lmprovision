@@ -1,6 +1,8 @@
 - name: provisioning of local machine...
   hosts: localhost
-  sudo: true
+  #sudo: true
+  become: yes
+  become_method: sudo
   vars:
     myusername: user0
     # shell cmd: mkpasswd --method=sha-512
