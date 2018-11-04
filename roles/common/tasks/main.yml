@@ -2,32 +2,32 @@
 - include: debug.yml
 - include: basics.yml
 - include: repos.yml
-#- include: bashrc.yml
+- include: bashrc.yml
 - include: libmisc.yml
-#- include: git.yml
-#- include: rxvt.yml
-#- include: vim.yml
-#- include: bless.yml
-#- include: ranger.yml
-#- include: gsysmon.yml
+- include: git.yml
+- include: rxvt.yml
+- include: vim.yml
+- include: bless.yml
+- include: ranger.yml
+- include: gsysmon.yml
 
-#- include: gparted.yml
-#- include: putty.yml
-#- include: virtualbox.yml
-#- include: vagrant.yml
-#- include: ansible.yml
+- include: gparted.yml
+- include: putty.yml
+- include: virtualbox.yml
+- include: vagrant.yml
+- include: ansible.yml
 
-#- include: hplip.yml
+- include: hplip.yml
 
-#- include: cheese.yml
-#- include: conky.yml
+- include: cheese.yml
+- include: conky.yml
 
 
 ## various app
 #- include: googlechrome.yml
 #- include: haskellstack.yml
 #- include: shutter.yml
-#- include: truecrypt.yml
+- include: truecrypt.yml
 #- include: bleachbit.yml
 #- include: brasero.yml
 #- include: sublimetext3.yml
